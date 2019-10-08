@@ -1,0 +1,318 @@
+{
+  "id": "48fc0b17-6c79-44cb-b522-19b83b63ca36",
+  "version": "2.0",
+  "name": "Mastodon",
+  "url": "https://mstdn-amadeus.tech",
+  "tests": [{
+    "id": "cdb2999f-088c-4475-a6e4-f3e913e4deef",
+    "name": "アカウント停止",
+    "commands": [{
+      "id": "163d608c-cdaf-440e-b5f9-a1c0c3ee2f14",
+      "comment": "",
+      "command": "open",
+      "target": "https://mstdn-amadeus.tech/admin/accounts",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0e518ff-6aa9-4b15-a819-3dc4b699d783",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c81bba78-66ff-4e8c-8b08-3f5515703788",
+      "comment": "",
+      "command": "while",
+      "target": "true",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "085d7d65-703c-4cc3-ad6f-974a7c600017",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=リモート",
+      "targets": [
+        ["linkText=リモート", "linkText"],
+        ["css=.filter-subset:nth-child(1) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'リモート')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/admin/accounts?remote=1')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'リモート')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8aeb915b-1a2d-4a46-b864-164b726fc7f4",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "hongeipi"
+    }, {
+      "id": "b9490487-a43f-4b19-b545-cb3aec9038a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'検索')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97115492-232a-4fef-87c3-59bf141867a2",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .username",
+      "targets": [
+        ["css=tr:nth-child(1) .username", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'hongeipii@mstdn.f72u.net')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b4da7be-6399-409b-8547-ab4f216216d0",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=活動を完全に停止させる",
+      "targets": [
+        ["linkText=活動を完全に停止させる", "linkText"],
+        ["css=.button:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'活動を完全に停止させる')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/admin/accounts/38149/action/new?type=suspend')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'活動を完全に停止させる')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "6f6b84cc-f728-43dc-89f5-945947ed2add",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=活動を完全に停止させる",
+      "targets": [
+        ["linkText=活動を完全に停止させる", "linkText"],
+        ["css=.button:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'活動を完全に停止させる')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/admin/accounts/39659/action/new?type=suspend')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'活動を完全に停止させる')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bd07ad0-e6e5-463e-8694-f396522c3b68",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "name=button",
+      "targets": [
+        ["name=button", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='button']", "xpath:attributes"],
+        ["xpath=//form[@id='new_admin_account_action']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'アクションを実行')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "841c27b7-29bb-43bf-9aac-73226e4cafef",
+      "comment": "",
+      "command": "click",
+      "target": "name=button",
+      "targets": [
+        ["name=button", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='button']", "xpath:attributes"],
+        ["xpath=//form[@id='new_admin_account_action']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'アクションを実行')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91835058-b9cf-4804-a717-219258d064fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'hongeipii@mstdn.f72u.net')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c9b64a3-8132-4426-8fe1-a0a4a226f53e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#accounts > .selected",
+      "targets": [
+        ["css=#accounts > .selected", "css:finder"],
+        ["xpath=(//a[contains(text(),'アカウント')])[2]", "xpath:link"],
+        ["xpath=//li[@id='accounts']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mstdn-amadeus.tech/admin/accounts')]", "xpath:href"],
+        ["xpath=//li[9]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "959efa3a-2e90-4da8-af30-b62b38be9d62",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bb6d17e2-62dc-46f1-a4de-804c4d7abbf0",
+    "name": "アカウント停止解除",
+    "commands": [{
+      "id": "e2d6dc9d-fc5c-4b8d-9c55-127944464f57",
+      "comment": "",
+      "command": "open",
+      "target": "https://mstdn-amadeus.tech/admin/accounts",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11fa9b29-8c0f-4497-a0fd-ab8d47f94299",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f39cccc4-a941-48ee-97e9-b25419203199",
+      "comment": "",
+      "command": "while",
+      "target": "true",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60764f94-3e57-4fc8-b363-f04fa6e088f0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=リモート",
+      "targets": [
+        ["linkText=リモート", "linkText"],
+        ["css=.filter-subset:nth-child(1) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'リモート')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/admin/accounts?remote=1')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'リモート')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a1540b7-9570-442e-85a3-b98888ab681d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=停止済み",
+      "targets": [
+        ["linkText=停止済み", "linkText"],
+        ["css=.filter-subset li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'停止済み')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/admin/accounts?remote=1&suspended=1')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'停止済み')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c76e3009-246d-40e0-894a-46dadc3074c5",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "hongeipi"
+    }, {
+      "id": "db4b629b-4516-4a88-b6e6-cc43caddc4d2",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'検索')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3de50a1a-dbfb-479d-97c5-ce2aef380975",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .username",
+      "targets": [
+        ["css=tr:nth-child(1) .username", "css:finder"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'hongeipii@mstdn.f72u.net')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8019b06-333c-45b4-883b-5cba42fccbff",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=停止から戻す",
+      "targets": [
+        ["linkText=活動を完全に停止させる", "linkText"],
+        ["css=.button:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'活動を完全に停止させる')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/admin/accounts/38149/action/new?type=suspend')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'活動を完全に停止させる')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c010a915-e603-4a9e-a02d-1b9a20be72a6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=停止から戻す",
+      "targets": [
+        ["linkText=停止済み", "linkText"],
+        ["css=.filter-subset li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'停止済み')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/admin/accounts?remote=1&suspended=1')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'停止済み')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d02754a5-e7b5-4391-9c4d-7cfda057c854",
+      "comment": "",
+      "command": "click",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'hongeipii@mstdn.f72u.net')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e4c1648-f842-461f-9f20-580bf0bc2caa",
+      "comment": "",
+      "command": "click",
+      "target": "css=#accounts > .selected",
+      "targets": [
+        ["css=#accounts > .selected", "css:finder"],
+        ["xpath=(//a[contains(text(),'アカウント')])[2]", "xpath:link"],
+        ["xpath=//li[@id='accounts']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mstdn-amadeus.tech/admin/accounts')]", "xpath:href"],
+        ["xpath=//li[9]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67e16a3a-255e-48db-8801-5bb5321b5e89",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [],
+  "urls": ["https://mstdn-amadeus.tech/"],
+  "plugins": []
+}
