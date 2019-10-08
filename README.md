@@ -1,0 +1,2 @@
+# MastodonModerationScript
+Mastodonのモデレーション用スクリプト
