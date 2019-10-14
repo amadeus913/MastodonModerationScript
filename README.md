@@ -1,2 +1,2 @@
 # MastodonModerationScript
-Mastodonのモデレーション用スクリプト
+Mastodonユーザの停止／停止解除を行うスクリプトです。
